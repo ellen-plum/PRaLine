@@ -6,8 +6,8 @@ Provides tools to analyze the inputted data from a proton radiogtaphy experiment
 import math
 import sys
 
-import rad_ut as ru
-from constants import M_PROTON_G, ESU, C, V_PER_E
+import praline.rad_ut as ru
+from praline.constants import M_PROTON_G, ESU, C, V_PER_E
 
 import matplotlib
 matplotlib.use('Agg') # Headless plotting (avoids python-tk GUI requirement)

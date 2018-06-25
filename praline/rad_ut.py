@@ -6,7 +6,7 @@ for caluclating purposes in the reconstruction alogorithm
 '''
 import math
 
-from constants import M_PROTON_G, ESU, C, V_PER_E
+from praline.constants import M_PROTON_G, ESU, C, V_PER_E
 
 from scipy.fftpack import fftn, ifftn
 import numpy as np

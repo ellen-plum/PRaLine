@@ -9,8 +9,8 @@ import math
 import sys
 import os.path
 
-import rad_ut as ru
-from constants import M_PROTON_G, ESU, C, V_PER_E
+import praline.rad_ut as ru
+from praline.constants import M_PROTON_G, ESU, C, V_PER_E
 
 import matplotlib as mpl
 mpl.use('Agg') # Headless plotting (avoids python-tk GUI requirement)

@@ -8,8 +8,8 @@ from a Proton Radiography experiment.
 import sys
 import math
 
-import rad_ut as ru
-from constants import M_PROTON_G, ESU, C, V_PER_E
+import praline.rad_ut as ru
+from praline.constants import M_PROTON_G, ESU, C, V_PER_E
 
 from re import match
 import numpy as np

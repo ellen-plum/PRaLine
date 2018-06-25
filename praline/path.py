@@ -6,8 +6,8 @@ import sys
 import math
 from re import match
 
-import rad_ut as ru
-from constants import M_PROTON_G, ESU, C, V_PER_E
+import praline.rad_ut as ru
+from praline.constants import M_PROTON_G, ESU, C, V_PER_E
 
 import pandas as pd
 import numpy as np

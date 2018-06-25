@@ -7,11 +7,11 @@ import sys
 import math
 
 from pradreader import reader
-import algorithm as alog
-import Bplot2 as plot
-import image
-import path
-import rad_ut as ru
+import praline.algorithm as alog
+import praline.Bplot2 as plot
+import praline.image
+import praline.path
+import praline.rad_ut as ru
 
 import numpy as np
 import pandas as pd
