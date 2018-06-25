@@ -12,7 +12,7 @@ from scipy.fftpack import fftn, ifftn
 import numpy as np
 
 dmax = 0
-delta = 0
+delta = 0 # ??
 
 def idx2vec(idx):
     xx = -dmax + (idx[0]+0.5)*delta
@@ -42,7 +42,7 @@ def position(flux_ref, bin_um):
 def gradient(fn, idx):
     N0 = fn.shape[0]
     N1 = fn.shape[1]
-    dfdx = ( fn[(idx[0]+1)%N0, idx[1]] - fn[(idx[0]-1)%N0, idx[1]] ) / (2*delta)
+    dfdx = ( fn[(idx[0]+1)%N0, idx[1]] - fn[(idx[0]-1)%N0, idx[1]] ) / (2*delta) # div by 0??
     dfdy = ( fn[idx[0], (idx[1]+1)%N1] - fn[idx[0], (idx[1]-1)%N1] ) / (2*delta)
     return np.array([dfdx, dfdy])
 

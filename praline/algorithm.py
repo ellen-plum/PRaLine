@@ -32,7 +32,7 @@ def b_field(s2r_cm, s2d_cm, Ep_MeV):
                   M_PROTON_G)  # Velocity of Proton
 
     Bconst = M_PROTON_G * C * v / \
-        (ESU * (s2r_cm - s2d_cm))  # Uniform B Field Strength
+        (ESU * (s2r_cm - s2d_cm))  # Uniform B Field Strength # why uniform?
 
     return Bconst
 
@@ -63,7 +63,7 @@ def steady_state(flux, flux_ref):
                 continue
             else:
                 # Original Equationfrom the paperEquation in Paper
-                #Lam[i, j] = (flux[i, j] - flux_ref[i, j]) / (flux_ref[i, j])
+                #Lam[i, j] = (flux[i, j] - flux_ref[i, j]) / (flux_ref[i, j]) # why are you taylor expanding a linear equation>?????
                 # Taylor expansion
                 Lam[i,j] = 2.0 * ( 1.0 - math.sqrt(flux_ref[i,j]/flux[i,j]))
 
