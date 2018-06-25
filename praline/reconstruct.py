@@ -6,11 +6,11 @@ Acts as a wrapper that runs the recons in this project
 import sys
 import os.path
 import pradreader
-import Bplot2 as plot
-import rad_ut as ru
-import algorithm as alog
-import path
-import image
+import praline.Bplot2 as plot
+import praline.rad_ut as ru
+import praline.algorithm as alog
+import praline.path
+import praline.image
 
 import numpy as np
 import argparse as ap
