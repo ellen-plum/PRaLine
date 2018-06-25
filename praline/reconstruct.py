@@ -10,7 +10,7 @@ import praline.Bplot2 as plot
 import praline.rad_ut as ru
 import praline.algorithm as alog
 import praline.path
-import praline.gitimage
+import praline.image
 
 import numpy as np
 import argparse as ap
