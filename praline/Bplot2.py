@@ -91,14 +91,16 @@ def B_plot(B, flux_ref, bin_um, type, title):
     ax.set_xlim(int(xmin) - 0.5, int(xmax) + 0.5)
     ax.set_ylim(int(ymin) - 0.5, int(ymax) + 0.5)
 
+    typeName = ''
     if type == 'carlo':
-        x = "Carlo"
+        typeName = "Carlo"
     elif type == 'flash4':
-        x = "Flash"
+        typeName = "Flash"
     elif type == 'mitcsv':
-        x = 'MITCSV'
-
-    ax.set(title=x + ": Log " + title + r" $B_\perp$ Projection (G cm)",
+        typeName = "MITCSV"
+    else: # in case of other type
+        typeName = "Type unspecified"
+    ax.set(title= typeName + ": Log " + title + r" $B_\perp$ Projection (G cm)",
            ylabel=r"Y (cm)", xlabel=r"X (cm)")
     ax.tick_params(labelsize='large')
 
