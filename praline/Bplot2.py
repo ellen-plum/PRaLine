@@ -98,8 +98,8 @@ def B_plot(B, flux_ref, bin_um, type, title):
         typeName = "Flash"
     elif type == 'mitcsv':
         typeName = "MITCSV"
-    else: # in case of other type
-        typeName = "Type unspecified"
+    elif type == 'prr':
+        typeName = "PRR"
     ax.set(title= typeName + ": Log " + title + r" $B_\perp$ Projection (G cm)",
            ylabel=r"Y (cm)", xlabel=r"X (cm)")
     ax.tick_params(labelsize='large')
