@@ -83,13 +83,13 @@ def B_plot(B, flux_ref, bin_um, type, title):
     fig.colorbar(strm.lines)
     #################################################
 
-    xmin = round(min(X[:, 0]), 1)
-    xmax = round(max(X[:, 0]), 1)
-    ymin = round(min(Y[0, :]), 1)
-    ymax = round(max(Y[0, :]), 1)
+    xmin = (min(X[:, 0])
+    xmax = (max(X[:, 0])
+    ymin = (min(Y[0, :])
+    ymax = (max(Y[0, :])
 
-    ax.set_xlim(int(xmin) - 0.5, int(xmax) + 0.5)
-    ax.set_ylim(int(ymin) - 0.5, int(ymax) + 0.5)
+    ax.set_xlim(xmin, xmax)
+    ax.set_ylim(ymin, ymax)
 
     typeName = ''
     if type == 'carlo':

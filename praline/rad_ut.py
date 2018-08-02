@@ -12,7 +12,7 @@ from scipy.fftpack import fftn, ifftn
 import numpy as np
 
 dmax = 0
-delta = 0 # ??
+delta = 0
 
 def idx2vec(idx):
     xx = -dmax + (idx[0]+0.5)*delta
@@ -84,7 +84,7 @@ def residual(x, y, D, O, b):
             r[i,j] = O(i,j,x,y) + D(i,j,y)*x[i,j] - b[i,j]
     return r
 
-def Gauss_Seidel(x, y, D, O, b, maxiter=2000, tol=1.0E-02, talk=0):
+def Gauss_Seidel(x, y, D, O, b, maxiter=4000, tol=1.0E-02, talk=0):
 
     L2b = fnorm(b)
     for itn in range(maxiter):
